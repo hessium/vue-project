@@ -1,14 +1,14 @@
 <template>
   <TheHeader />
-  <TheHero />
   <main>
-
+    <TheHero />
   </main>
 </template>
 
 <script setup>
 import TheHeader from "@/components/TheHeader.vue";
 import TheHero from "@/components/TheHero.vue";
+
 </script>
 
 <style lang="scss">

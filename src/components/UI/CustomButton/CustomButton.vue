@@ -1,6 +1,6 @@
 <script setup>
 // eslint-disable-next-line no-undef
-const props = defineProps({
+defineProps({
   text: {
     type: String,
     default: "",
@@ -38,14 +38,14 @@ const props = defineProps({
 
 <template>
   <button :style="{
-    color: props.btnColor || 'red',
-    fontSize: props.btnSize + 'px' || '16px' ,
-    borderRadius: props.btnRadius + 'px',
-    paddingTop: props.btnPaddingVer + 'px',
-    paddingBottom: props.btnPaddingVer + 'px',
-    paddingLeft: props.btnPaddingHor + 'px',
-    paddingRight: props.btnPaddingHor + 'px',
-    background: props.btnBackground,
+    color: btnColor || 'red',
+    fontSize: btnSize + 'px' || '16px' ,
+    borderRadius: btnRadius + 'px',
+    paddingTop: btnPaddingVer + 'px',
+    paddingBottom: btnPaddingVer + 'px',
+    paddingLeft: btnPaddingHor + 'px',
+    paddingRight: btnPaddingHor + 'px',
+    background: btnBackground,
   }">
     {{text}}
   </button>

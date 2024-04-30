@@ -12,17 +12,30 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  &.lock-scroll {
+    overflow: hidden;
+  }
 }
 
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.2;
+  min-height: 100dvh;
 }
 
 ul,li {
   list-style: none;
 }
 
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 button {
   cursor: pointer;
   border: none;
@@ -73,4 +86,23 @@ a {
 
 .purple {
   color:  rgba(108, 95, 188, 1);
+}
+
+@media (max-width: 1224px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 69px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 13px 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
 }

@@ -29,9 +29,27 @@ export default {
     padding: 0 27px;
     cursor: pointer;
     transition: color .3s linear;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
   }
 
   .link:hover {
     color: var(--color-prime);
+  }
+
+  @media (max-width: 1224px) {
+    .link {
+      padding: 0 17px;
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
   }
 </style>

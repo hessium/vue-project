@@ -1,13 +1,14 @@
 <template>
-  <TheHeader />
+  <Header />
   <main>
-    <TheHero />
+    <RouterView />
   </main>
+  <Footer/>
 </template>
 
 <script setup>
-import TheHeader from "@/components/TheHeader.vue";
-import TheHero from "@/components/TheHero.vue";
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer";
 
 </script>
 

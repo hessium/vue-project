@@ -1,24 +1,18 @@
-<script >
-export default {
-  name: "TheNavigation",
-  data() {
-    const links = [
-      { name: "Menu", path: '/menu'},
-      { name: "Blog", path: '/blog'},
-      { name: "Pricing", path: '/pricing'},
-      { name: "Contact", path: '/contact'},
-      ];
-    return {
-      links
-    }
-  }
-}
+<script setup>
+const links = [
+  { name: "Menu", path: '/menu'},
+  { name: "Blog", path: '/blog'},
+  { name: "Pricing", path: '/pricing'},
+  { name: "Contact", path: '/contacts'},
+];
+
 </script>
 <template>
   <nav>
     <RouterLink class="link" v-for="link in links" :key="link.name" :to="link.path">{{link.name}}</RouterLink>
   </nav>
 </template>
+
 <style scoped>
   nav {
     display: flex;

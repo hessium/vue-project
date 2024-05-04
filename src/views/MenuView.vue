@@ -1,10 +1,12 @@
 <template>
-  <div>HomePage</div>
+  <section>
+    <h1>MenuView</h1>
+  </section>
 </template>
 
 <script>
 export default {
-  name: "HomePage"
+  name: "MenuPage"
 }
 </script>
 

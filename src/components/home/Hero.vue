@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-   <div class="hero">
+   <section class="hero">
      <div class="hero__block">
        <div class="hero-count">
          <span class="hero-count__line"></span> {{data.usersCount}} users
@@ -12,21 +12,21 @@
          EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early. Get a <span class="purple">$20 bonus</span>.
        </div>
        <div class="hero__actions">
-         <a href="#" class="btn hero__btn ">
+         <RouterLink to="/login" class="btn hero__btn ">
            Get Started
-         </a>
-         <a href="#" class="btn btn-white hero__btn">
+         </RouterLink>
+         <RouterLink to="/sign" class="btn btn-white hero__btn">
            Go Pro
-         </a>
+         </RouterLink>
        </div>
        <div class="hero-review">
          <div class="hero-reviews__logo">
            <img src="/hero/trust-icon.svg" alt="">
          </div>
         <div class="hero-review__list">
-          <star-rating v-model:rating="data.rating"></star-rating>
+          <star-rating v-model:rating="data.stars" star-size="16" />
+          <span>{{data.review}}+</span>
         </div>
-         <span>{{data.review}}+</span>
        </div>
      </div>
      <div class="hero-wrap">
@@ -51,22 +51,24 @@
          </div>
        </div>
      </div>
-   </div>
+   </section>
   </div>
 </template>
 
 <script setup>
-import { reactive } from 'vue';
-// eslint-disable-next-line no-unused-vars
+import {reactive} from 'vue';
+import StarRating from 'vue-star-rating';
+
 const data  = reactive({
   title: '',
   desc: '',
   usersCount: '1000',
-  rating: 5,
+  stars: 4,
   review: '4900'
 })
+
 </script>
 
 <style lang="scss">
-@import "../styles/hero.scss";
+@import "../../styles/hero";
 </style>

@@ -2,20 +2,18 @@
   <header class="header">
     <div class="container">
       <div class="header-container">
-        <a href="/" class="header__logo">
-          <img src="/logo.svg" alt="">
-          <span class="header__logo--animate">eatly</span>
-        </a>
+        <Logo/>
         <transition name="fade">
           <div v-show="menuOpen" class="header-menu">
-            <TheNavigation/>
+            <HeaderNavigation/>
             <div class="header__actions">
-              <routerlink class="header__link"  to="/login">Login</routerlink>
-              <routerlink class="btn"  to="/sign">Sign up</routerlink>
+              <RouterLink class="header__link"  to="/login">Login</RouterLink>
+              <RouterLink class="btn"  to="/sign">Sign up</RouterLink>
             </div>
           </div>
         </transition>
         <button
+            type="button"
             v-show="buttonShow"
             class="header-burger"
             :class="{ open: menuOpen }"
@@ -30,8 +28,10 @@
 </template>
 
 <script setup>
-import TheNavigation from "@/components/TheNavigation";
-import {ref, watch} from "vue";
+import Logo from "@/components/Logo";
+import HeaderNavigation from "@/components/HeaderNavigation";
+import { RouterLink } from 'vue-router'
+import {ref, watchEffect} from "vue";
 
 const  menuOpen =  ref('');
 const  buttonShow =  ref('');
@@ -48,7 +48,7 @@ const getWindowWidth = () => {
   buttonShow.value = window.innerWidth < 768;
 }
 getWindowWidth()
-watch(() => {
+watchEffect(() => {
   window.addEventListener("resize", getWindowWidth);
 })
 

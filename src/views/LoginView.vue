@@ -1,10 +1,12 @@
 <template>
-  <div>BlogPage</div>
+  <section>
+    <h1>LoginView</h1>
+  </section>
 </template>
 
 <script>
 export default {
-  name: "BlogPage"
+  name: "LoginView"
 }
 </script>
 

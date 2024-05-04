@@ -1,10 +1,12 @@
 <template>
-  <div>ContactPage</div>
+  <section>
+    <h1>PricingView</h1>
+  </section>
 </template>
 
 <script>
 export default {
-  name: "ContactPage"
+  name: "PricingPage"
 }
 </script>
 

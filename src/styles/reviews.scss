@@ -1,0 +1,118 @@
+.reviews {
+  max-width: 1440px;
+  margin-inline: auto;
+  &-list {
+    padding: 80px 30px 80px 100px;
+    overflow: visible;
+  }
+  &-item {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius:10px ;
+    -webkit-box-shadow: 4px 4px 38px 11px rgba(50, 49, 66, 0.2);
+    -moz-box-shadow: 4px 4px 38px 11px rgba(50, 49, 66, 0.2);
+    box-shadow: 4px 4px 38px 11px rgba(50, 49, 66, 0.2);
+    width: 528px;
+    text-align: left;
+
+    & h3 {
+      font-size: 20px;
+      word-break: break-word;
+      margin-bottom: auto;
+    }
+
+    &__text {
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    & p {
+      margin-bottom: auto;
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    &__header {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    &.swiper-slide {
+      opacity: 0;
+      height: auto;
+      transition: opacity .7s linear;
+      &-visible {
+        opacity: 1;
+      }
+    }
+  }
+
+  .swiper-pagination.swiper-pagination-progressbar {
+    width: 80%;
+    bottom: 40px;
+    right: 0;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 11px;
+    border-radius: 50px;
+    background-color: rgba(108, 95, 188, .2);
+    overflow: hidden;
+  }
+
+  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background:var(--color-prime);
+    border-radius: 50px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .reviews {
+    &-list {
+      overflow: hidden;
+    }
+
+    .swiper-pagination.swiper-pagination-progressbar {
+      right: 20px;
+    }
+  }
+}
+
+@media  (max-width: 1290px) {
+  .reviews {
+    &-item {
+      &.swiper-slide {
+        width: 375px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .reviews {
+    &-item {
+      &.swiper-slide {
+        width: 375px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .reviews {
+
+    &-list {
+      padding: 55px 30px 100px;
+    }
+    &-item {
+      &.swiper-slide {
+        width: 375px;
+        max-width: 100%;
+      }
+    }
+  }
+}

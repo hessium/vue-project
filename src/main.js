@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './app.vue'
 import { createRouter, createWebHistory} from "vue-router";
 import 'normalize.css/normalize.css';
+import store from './store/store'
 
 const routes =  [
     { name: "Home", path: '/', base: '/', component: () => import('@/views/HomeView') },
@@ -20,5 +21,6 @@ const router = createRouter({
 })
 
 createApp(App)
+    .use(store)
     .use(router)
     .mount('#app')

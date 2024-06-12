@@ -1,6 +1,6 @@
 <template>
   <RouterLink to="/" class="logo">
-    <img src="/logo.svg" alt="">
+    <img src="/images/icons/logo.svg" alt="">
     <span class="logo--animate">eatly</span>
   </RouterLink>
 </template>
@@ -34,7 +34,7 @@
   }
 }
 
-@media (max-width: 1224px) {
+@media (max-width: 1290px) {
   .logo {
     gap:8px;
     margin-right: 56px;

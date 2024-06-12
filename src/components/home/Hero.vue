@@ -21,22 +21,22 @@
        </div>
        <div class="hero-review">
          <div class="hero-reviews__logo">
-           <img src="/hero/trust-icon.svg" alt="">
+           <img src="/images/hero/trust-icon.svg" alt="">
          </div>
         <div class="hero-review__list">
-          <star-rating v-model:rating="data.stars" star-size="16" />
+          <star-rating v-model:rating="data.stars" :star-size="16" />
           <span>{{data.review}}+</span>
         </div>
        </div>
      </div>
      <div class="hero-wrap">
        <div class="hero-wrap__bg">
-         <img src="/hero/food.png" alt="food">
+         <img src="/images/hero/food.png" alt="food">
        </div>
        <div class="hero-wrap__content">
          <div class="hero-item">
            <div class="hero-item__img">
-             <img src="/hero/food-small.png" alt="food">
+             <img src="/images/hero/food-small.png" alt="food">
            </div>
            <div class="hero-item__text">
              <div class="hero-item__name">Chicken Hell</div>
@@ -47,7 +47,7 @@
            </div>
          </div>
          <div class="hero-graph">
-           <img src="/hero/graph.png" alt="graph">
+           <img src="/images/hero/graph.png" alt="graph">
          </div>
        </div>
      </div>

@@ -2,22 +2,22 @@
   <ul class="socials">
     <li>
       <a href="" target="_blank">
-        <img src="/inst.svg" alt="inst">
+        <img src="/images/icons/inst.svg" alt="inst">
       </a>
     </li>
     <li>
       <a href="" target="_blank">
-        <img src="/in.svg" alt="inst">
+        <img src="/images/icons/in.svg" alt="inst">
       </a>
     </li>
     <li>
       <a href="" target="_blank">
-        <img src="/facebook.svg" alt="inst">
+        <img src="/images/icons/facebook.svg" alt="inst">
       </a>
     </li>
     <li>
       <a href="" target="_blank">
-        <img src="/twitter.svg" alt="inst">
+        <img src="/images/icons/twitter.svg" alt="inst">
       </a>
     </li>
   </ul>

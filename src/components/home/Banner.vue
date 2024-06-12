@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
   <section class="banner">
     <div class="container">
@@ -28,9 +25,12 @@
   </section>
 </template>
 
+<script setup>
+</script>
+
 <style scoped lang="scss">
 .banner {
-  background-image: url('/public/banner-bg.png');
+  background-image: url('/public/images/banner-bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

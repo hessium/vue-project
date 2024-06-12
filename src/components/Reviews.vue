@@ -19,21 +19,21 @@
       >
         <swiper-slide class="reviews-item"  v-for="item in allComments" :key="item.id">
           <div class="reviews-item__header">
-            <img src="/avatar.png" alt="">
+            <img src="/images/avatar.png" alt="">
             <div class="reviews-item__text">
               <h3>{{item.email}}</h3>
               <div class="reviews-item__date">{{item.name}}</div>
             </div>
           </div>
           <p>{{item.body}}</p>
-          <star-rating v-model:rating="item.id" star-size="16"/>
+          <star-rating v-model:rating="item.id" :star-size="16"/>
         </swiper-slide>
       </swiper>
   </section>
 </template>
 
 <script setup>
-import {computed, onMounted,} from "vue";
+import {computed, onMounted} from "vue";
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Pagination, Navigation } from 'swiper/modules';
 import StarRating from 'vue-star-rating';
@@ -49,7 +49,7 @@ const store = useStore();
 const modules = [Pagination, Navigation]
 
 const allComments = computed(() => store.getters.allComments);
-onMounted(  async () =>  {
+onMounted(async () =>  {
   await store.dispatch('fetchComments')
 })
 

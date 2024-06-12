@@ -2,8 +2,8 @@ export default {
     actions: {
         async  fetchComments(ctx, id = 1) {
             const res = await fetch(`https://jsonplaceholder.typicode.com/comments?postId=${id}`)
-            const comments = await res.json();
-            ctx.commit('updateComments', comments)
+            const data = await res.json();
+            ctx.commit('updateComments', data)
         }
     },
     state: {
@@ -16,7 +16,7 @@ export default {
     },
     mutations: {
         updateComments(state, comments) {
-            state.comments = comments
+            state.comments = comments;
         }
     },
 

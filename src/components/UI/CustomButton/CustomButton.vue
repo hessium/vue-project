@@ -1,10 +1,7 @@
 <script setup>
-// eslint-disable-next-line no-undef
+import {defineProps} from 'vue';
+
 defineProps({
-  text: {
-    type: String,
-    default: "",
-  },
   btnColor: {
     type: String,
     default: "",
@@ -32,14 +29,10 @@ defineProps({
 });
 </script>
 
-<style scoped>
-
-</style>
-
 <template>
   <button :style="{
     color: btnColor || 'red',
-    fontSize: btnSize + 'px' || '16px' ,
+    fontSize: btnSize + 'px',
     borderRadius: btnRadius + 'px',
     paddingTop: btnPaddingVer + 'px',
     paddingBottom: btnPaddingVer + 'px',
@@ -47,6 +40,10 @@ defineProps({
     paddingRight: btnPaddingHor + 'px',
     background: btnBackground,
   }">
-    {{text}}
+    <slot></slot>
   </button>
 </template>
+
+<style scoped>
+
+</style>

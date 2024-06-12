@@ -99,7 +99,13 @@ section {
   color:  rgba(108, 95, 188, 1);
 }
 
-@media (max-width: 1224px) {
+
+.padding-bottom {
+  padding-bottom: 120px;
+  border-bottom: 1px solid #CBCBCB;
+}
+
+@media (max-width: 1290px) {
   .container {
     max-width: 1024px;
     padding: 0 69px;
@@ -113,11 +119,20 @@ section {
     font-size: 13px;
     padding: 13px 19px;
   }
+
+  .padding-bottom {
+    padding-bottom: 85px;
+  }
 }
+
 
 @media (max-width: 768px) {
   .container {
     max-width: 100%;
     padding: 0 30px;
+  }
+
+  .padding-bottom {
+    padding-bottom: 66px;
   }
 }

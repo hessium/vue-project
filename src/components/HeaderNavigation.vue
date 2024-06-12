@@ -32,7 +32,7 @@ const links = [
     color: var(--color-prime);
   }
 
-  @media (max-width: 1224px) {
+  @media (max-width: 1290px) {
     .link {
       padding: 0 17px;
       font-size: 13px;

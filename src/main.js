@@ -2,16 +2,13 @@ import { createApp } from 'vue'
 import App from './app.vue'
 import { createRouter, createWebHistory} from "vue-router";
 import 'normalize.css/normalize.css';
-import store from './store/store'
+import store from './store/store';
+import VueSplide from '@splidejs/vue-splide';
 
 const routes =  [
     { name: "Home", path: '/', base: '/', component: () => import('@/views/HomeView') },
     { name: "Menu", path: '/menu', component: () => import('@/views/MenuView') },
-    { name: "Blog", path: '/blog', component: () => import('@/views/BlogView')  },
-    { name: "Pricing", path: '/pricing', component: () => import('@/views/PricingView') },
-    { name: "Contacts", path: '/contacts', component: () => import('@/views/ContactsView') },
-    { name: "Sign", path: '/sign', component: () => import('@/views/SignView') },
-    { name: "Login", path: '/login', component: () => import('@/views/LoginView') },
+    { name: "404", path: '/:pathMatch(.*)*', component: () => import('@/views/404')}
 ]
 
 const router = createRouter({
@@ -22,5 +19,5 @@ const router = createRouter({
 
 createApp(App)
     .use(store)
-    .use(router)
+    .use(router, VueSplide)
     .mount('#app')

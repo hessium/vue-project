@@ -1,0 +1,94 @@
+[
+  {
+    "categories": [
+      { "name": "Pizza", "id": 1, "icon": "images/icons/pizza.svg", "selected":  false},
+      { "name": "Asian",   "id": 2, "icon": "images/icons/hotdog.svg", "selected":  true },
+      { "name": "Donat",  "id": 3, "icon": "images/icons/donat.svg", "selected":  false },
+      { "name": "Ice",  "id": 4, "icon": "images/icons/icecream.svg", "selected":  false }
+    ],
+    "products": [
+      {
+        "id": 1,
+        "name": "Chicken Hell",
+        "tag" : "healthy",
+        "price": "12",
+        "priceCent" : "99",
+        "time" : "24min",
+        "img" : "/images/product/card-1.png",
+        "rating" : "4.8"
+      },
+      {
+        "id": 2,
+        "name": "Swe Dish",
+        "tag" : "trending",
+        "price": "19",
+        "priceCent" : "99",
+        "time" : "24min",
+        "img" : "/images/product/card-2.png",
+        "rating" : "4.9"
+      },
+      {
+        "id": 3,
+        "name": "Swe Dish",
+        "tag" : "supreme",
+        "price": "19",
+        "priceCent" : "99",
+        "time" : "24min",
+        "img" : "/images/product/card-3.png",
+        "rating" : "4.9"
+      },
+      {
+        "id": 4,
+        "name": "Chicken Hell",
+        "tag" : "healthy",
+        "price": "12",
+        "priceCent" : "99",
+        "time" : "24min",
+        "img" : "/images/product/card-1.png",
+        "rating" : "4.8"
+      },
+      {
+        "id": 5,
+        "name": "Swe Dish",
+        "tag" : "trending",
+        "price": "19",
+        "priceCent" : "99",
+        "time" : "24min",
+        "img" : "/images/product/card-2.png",
+        "rating" : "4.9"
+      }
+    ],
+    "restaurant" : [
+      {
+        "id": 1,
+        "name": "Chicken Hell",
+        "tag" : "healthy",
+        "price": "12",
+        "priceCent" : "99",
+        "time" : "24min",
+        "img" : "/images/product/big-card-1.jpg",
+        "rating" : "4.8"
+      },
+      {
+        "id": 2,
+        "name": "Swe Dish",
+        "tag" : "trending",
+        "price": "19",
+        "priceCent" : "99",
+        "time" : "24min",
+        "img" : "/images/product/big-card-2.jpg",
+        "rating" : "4.9"
+      },
+      {
+        "id": 3,
+        "name": "Swe Dish",
+        "tag" : "supreme",
+        "price": "19",
+        "priceCent" : "99",
+        "time" : "24min",
+        "img" : "/images/product/big-card-3.jpg",
+        "rating" : "4.9"
+      }
+    ]
+  }
+]

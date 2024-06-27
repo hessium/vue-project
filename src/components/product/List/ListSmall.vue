@@ -12,7 +12,7 @@
           </svg>
         </a>
       </div>
-        <div class="products__list">
+        <div class="products__list products-small__list">
             <CardView type="small" :item="item"  v-for="item in list" :key="item.id"/>
         </div>
         <a href="#" v-if="props.home" class="products__all">

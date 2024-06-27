@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.0",
+    "@splidejs/vue-splide": "^0.6.12",
     "core-js": "^3.8.3",
+    "embla-carousel-vue": "^8.1.5",
     "normalize.css": "^8.0.1",
     "sass": "^1.75.0",
     "sass-loader": "^14.2.1",

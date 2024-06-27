@@ -12,7 +12,7 @@ export default {
     getters: {
         allComments(state) {
             return state.comments
-        }
+        },
     },
     mutations: {
         updateComments(state, comments) {
